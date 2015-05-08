@@ -8,28 +8,100 @@
 
 	<header>
 		<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+		<nav>
+			<ul>
+				<li><a href="#">お問い合わせ</a></li>
+				<li>
+				<a href="#">
+				<select name="language" id="language">
+					<option value="en">English</option>
+					<option value="ch">中文(簡体字)</option>
+					<option value="ch">中文(繁体字)</option>
+					<option value="co">한국어</option>
+					</select>
+				</a></li>
+			</ul><!-- subnav -->
 
-	<nav>
-		<ul>
-			<li><a href="#">お問い合わせ</a></li>
-			<li><a href="#">language</a></li>
-		</ul>
-
-		<ul>
-			<li><a href="stay.html">宿泊<br>stay</a></li>
-			<li><a href="#">レストラン＆バー<br>restaurant&bar</a></li>
-			<li><a href="#">スペシャル<br>special</a></li>
-			<li><a href="#">アクセス<br>access</a></li>
-		</ul>
+			<ul>
+				<li><a href="stay.html"><img src="img/stay.png" alt="stay"></a></li>
+				<li><a href="#"><img src="img/restaurant.png" alt="restaurant"></a></li>
+				<li><a href="#"><img src="img/special.png" alt="special"></a></li>
+				<li><a href="#"><img src="img/access.png" alt="access"></a></li>
+			</ul><!-- nav -->
 		</nav>
 	</header>
-
 
 	<div>
 		<img src="img/mainVisual.jpg" alt="mainVisual">
 	</div><!-- mainVisual -->
 
-	<div>
+
+	<form action="reserve.php"></form>
+	<dl>
+	<dt>ご宿泊</dt>
+		<dd>
+			<select name="ym" id="ym">
+				<option value="201504">2015年4月</option>
+				<option value="201505">2015年5月</option>
+				<option value="201506">2015年6月</option>
+			</select>
+
+			<select name="yd" id="yd">
+				<option value="20">20日</option>
+				<option value="21">21日</option>
+				<option value="22">22日</option>
+				<option value="23">23日</option>
+				<option value="24">24日</option>
+				<option value="25">25日</option>
+			</select>
+		</dd>
+	</dl>
+	<dl>
+		<dt>日数</dt>
+		<dd>
+			<select name="stays" id="stays">
+				<option value="1">1泊</option>
+				<option value="2">2泊</option>
+				<option value="3">3泊</option>
+				<option value="4">4泊</option>
+				<option value="5">5泊</option>
+			</select>
+		</dd>
+
+		<dt>部屋数</dt>
+		<dd>
+			<select name="rooms" id="rooms">
+				<option value="1">1室</option>
+				<option value="2">2室</option>
+				<option value="3">3室</option>
+				<option value="4">4室</option>
+				<option value="5">5室</option>
+			</select>
+		</dd>
+
+		<dt>人数</dt>
+		<dd>
+			<select name="persons" id="persons">
+				<option value="1">1人</option>
+				<option value="2">2人</option>
+				<option value="3">3人</option>
+				<option value="4">4人</option>
+				<option value="5">5人</option>
+			</select>
+		</dd>
+	</dl>
+
+	<dl>
+		<dt>検索タイプ</dt>
+		<dd><input type="radio" name="room" value="type" checked="checked">部屋タイプ別</dd>
+		<dd><input type="radio" name="room" value="plan">宿泊プラン別</dd>
+	</dl>
+
+		<a href="#"><img src="img/reservebtn.png" alt="btn"></a>
+
+
+
+	<section>
 		<hr>
 		<h2>スペシャルプラン</h2>
 		<ul>
@@ -37,11 +109,11 @@
 			<li><a href="#"><img src="img/plan02.jpg" alt="fair"></a></li>
 		</ul>
 		<a href="#">その他のプランを見る</a>
-	</div><!-- special -->
+	</section><!-- special -->
 
 	<br>
 
-	<div>
+	<section>
 		<hr>
 		<h2>ホテルからのお知らせ</h2>
 		<dl>
@@ -53,7 +125,7 @@
 			<dd>☆【4月1日より】無料送迎シャトルバス便が生まれ変わります☆</dd>
 		</dl>
 		<a href="#">過去記事一覧</a>
-	</div><!-- news -->
+	</section><!-- news -->
 
 	<br><br>
 
@@ -68,7 +140,6 @@
 
 		<ul>
 			<li><a href="#">TOP</a></li>
-			<br>
 			<li><a href="#">ご宿泊</a></li>
 			<li><a href="#">Tレストラン＆バー</a></li>
 			<li><a href="#">スペシャル</a></li>
@@ -93,6 +164,8 @@
 			<li><a href="#">トラスティ心斎橋</a></li>
 			<li><a href="#">大阪阿倍野</a></li>
 		</ul>
+
+	<p><small>Copyright &copy; RESORTTRUST All rights reserved.</small></p>
 
 	</footer>
 
