@@ -1,173 +1,217 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
 	<title>hotel web 谷端</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
-	<header>
-		<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-		<nav>
-			<ul>
-				<li><a href="#">お問い合わせ</a></li>
-				<li>
-				<a href="#">
-				<select name="language" id="language">
-					<option value="en">English</option>
-					<option value="ch">中文(簡体字)</option>
-					<option value="ch">中文(繁体字)</option>
-					<option value="co">한국어</option>
-					</select>
-				</a></li>
-			</ul><!-- subnav -->
+	<div class="header_wrapper">
+		<header>
+			<div class="inner">
+				<h1>
+				<a href="index.html"><img src="img/logo.png" alt="tokyo bayside hotel"></a>
+				</h1>
 
-			<ul>
-				<li><a href="stay.html"><img src="img/stay.png" alt="stay"></a></li>
-				<li><a href="#"><img src="img/restaurant.png" alt="restaurant"></a></li>
-				<li><a href="#"><img src="img/special.png" alt="special"></a></li>
-				<li><a href="#"><img src="img/access.png" alt="access"></a></li>
-			</ul><!-- nav -->
-		</nav>
-	</header>
+				<div class="navigation">
+					<ul class="subnav">
+						<li><a href="#">お問い合わせ</a></li>
+						<li>
+							<select name="language" id="language">
+								<option value="en">English</option>
+								<option value="ch">中文(簡体字)</option>
+								<option value="ch">中文(繁体字)</option>
+								<option value="co">한국어</option>
+							</select>
+						</li>
+					</ul><!-- subnav -->
 
-	<div>
-		<img src="img/mainVisual.jpg" alt="mainVisual">
-	</div><!-- mainVisual -->
+					<nav>
+						<ul>
+							<li><a href="stay.html"><img src="img/stay.png" alt="stay"></a></li>
+							<li><a href="#"><img src="img/restaurant.png" alt="restaurant"></a></li>
+							<li><a href="#"><img src="img/special.png" alt="special"></a></li>
+							<li><a href="#"><img src="img/access.png" alt="access"></a></li>
+						</ul><!-- nav -->
+					</nav>
+				</div>
+			</div><!-- inner -->
+			</header>
 
 
-	<form action="reserve.php"></form>
-	<dl>
-	<dt>ご宿泊</dt>
-		<dd>
-			<select name="ym" id="ym">
-				<option value="201504">2015年4月</option>
-				<option value="201505">2015年5月</option>
-				<option value="201506">2015年6月</option>
-			</select>
-
-			<select name="yd" id="yd">
-				<option value="20">20日</option>
-				<option value="21">21日</option>
-				<option value="22">22日</option>
-				<option value="23">23日</option>
-				<option value="24">24日</option>
-				<option value="25">25日</option>
-			</select>
-		</dd>
-	</dl>
-	<dl>
-		<dt>日数</dt>
-		<dd>
-			<select name="stays" id="stays">
-				<option value="1">1泊</option>
-				<option value="2">2泊</option>
-				<option value="3">3泊</option>
-				<option value="4">4泊</option>
-				<option value="5">5泊</option>
-			</select>
-		</dd>
-
-		<dt>部屋数</dt>
-		<dd>
-			<select name="rooms" id="rooms">
-				<option value="1">1室</option>
-				<option value="2">2室</option>
-				<option value="3">3室</option>
-				<option value="4">4室</option>
-				<option value="5">5室</option>
-			</select>
-		</dd>
-
-		<dt>人数</dt>
-		<dd>
-			<select name="persons" id="persons">
-				<option value="1">1人</option>
-				<option value="2">2人</option>
-				<option value="3">3人</option>
-				<option value="4">4人</option>
-				<option value="5">5人</option>
-			</select>
-		</dd>
-	</dl>
-
-	<dl>
-		<dt>検索タイプ</dt>
-		<dd><input type="radio" name="room" value="type" checked="checked">部屋タイプ別</dd>
-		<dd><input type="radio" name="room" value="plan">宿泊プラン別</dd>
-	</dl>
-
-		<a href="#"><img src="img/reservebtn.png" alt="btn"></a>
+		<div class="mainvisual">
+			<img src="img/mainVisual.jpg" alt="都会で味わう、いつもと違う贅沢。">
+		</div><!-- mainVisual -->
+	</div>
 
 
 
-	<section>
-		<hr>
-		<h2>スペシャルプラン</h2>
-		<ul>
-			<li><a href="#"><img src="img/plan01.jpg" alt="special"></a></li>
-			<li><a href="#"><img src="img/plan02.jpg" alt="fair"></a></li>
-		</ul>
-		<a href="#">その他のプランを見る</a>
-	</section><!-- special -->
+	<div class="wrapper">
+		<div class="form">
+			<form action="reserve.php">
+				<ul>
+					<li class="month">
+					<dl>
+						<dt>ご宿泊日</dt>
+						<dd>
+							<select name="ym" id="ym">
+								<option value="201504">2015年4月</option>
+								<option value="201505">2015年5月</option>
+								<option value="201506">2015年6月</option>
+							</select>
+						</dd>
+					</dl>
+					</li>
+					<li class="days">
+					<dl>
+						<dt>　<!-- 日にち --></dt>
+						<dd>
+							<select name="yd" id="yd">
+								<option value="20">20日</option>
+								<option value="21">21日</option>
+								<option value="22">22日</option>
+								<option value="23">23日</option>
+								<option value="24">24日</option>
+								<option value="25">25日</option>
+							</select>
+						</dd>
+					</dl>
+					</li>
+					<li class="stays">
+						<dl>
+							<dt>日数</dt>
+							<dd>
+								<select name="stays" id="stays">
+									<option value="1">1泊</option>
+									<option value="2">2泊</option>
+									<option value="3">3泊</option>
+									<option value="4">4泊</option>
+									<option value="5">5泊</option>
+								</select>
+							</dd>
+						</dl>
+					</li>
+					<li class="rooms">
+						<dl>
+							<dt>部屋数</dt>
+							<dd>
+								<select name="rooms" id="rooms">
+									<option value="1">1室</option>
+									<option value="2">2室</option>
+									<option value="3">3室</option>
+									<option value="4">4室</option>
+									<option value="5">5室</option>
+								</select>
+							</dd>
+						</dl>
+					</li>
+					<li class="persons">
+						<dl>
+							<dt>人数</dt>
+							<dd>
+								<select name="persons" id="persons">
+									<option value="1">1人</option>
+									<option value="2">2人</option>
+									<option value="3">3人</option>
+									<option value="4">4人</option>
+									<option value="5">5人</option>
+								</select>
+							</dd>
+						</dl>
+					</li>
+				</ul>
 
-	<br>
+				<dl>
+					<dt>検索タイプ</dt>
+					<dd><input type="radio" name="room" value="type" checked="checked">部屋タイプ別</dd>
+					<dd><input type="radio" name="room" value="plan">宿泊プラン別</dd>
+				</dl>
 
-	<section>
-		<hr>
-		<h2>ホテルからのお知らせ</h2>
-		<dl>
-			<dt><span style="background-color:#e7e2da;">2015/02/01</span></dt>
-			<dd>改装工事終了のお知らせ</dd>
-			<dt><span style="background-color:#e7e2da;">2015/01/29</span></dt>
-			<dd>ランチタイム　営業再開のお知らせ</dd>
-			<dt><span style="background-color:#e7e2da;">2015/02/21</span></dt>
-			<dd>☆【4月1日より】無料送迎シャトルバス便が生まれ変わります☆</dd>
-		</dl>
-		<a href="#">過去記事一覧</a>
-	</section><!-- news -->
+				<a href="#"><img src="img/reservebtn.png" alt="btn"></a>
+			</form>
+		</div><!-- form -->
 
-	<br><br>
+
+		<div class="contents">
+			<section class="plan">
+				<h2>スペシャルプラン</h2>
+				<ul>
+					<li><a href="#"><img src="img/plan01.jpg" alt="special"></a></li>
+					<li><a href="#"><img src="img/plan02.jpg" alt="fair"></a></li>
+				</ul>
+				<p class="contents_link"><a href="#">その他のプラン</a></p>
+			</section><!-- special -->
+
+			<section class="news">
+				<h2>ホテルからのお知らせ</h2>
+				<dl>
+					<dt>2015/02/01</dt>
+					<dd>改装工事終了のお知らせ</dd>
+					<dt>2015/01/29</dt>
+					<dd>ランチタイム　営業再開のお知らせ</dd>
+					<dt>2015/02/21</dt>
+					<dd>☆【4月1日より】無料送迎シャトルバス便が生まれ変わります☆</dd>
+				</dl>
+				<p class="contents_link"><a href="#">過去記事一覧</a></p>
+			</section><!-- news -->
+		</div><!-- contents -->
+	</div><!-- wrapper -->
+
 
 
 	<footer>
-	<hr>
-		<a href="index.html"><img src="img/footer_logo.png" alt="logo"></a>
-		<p>東京ベイサイドホテル<br>
-		〒135-0063　東京都江東区有明3-1-15<br>
-		TEL:03-6700-0001(代表)<br>
-		FAX:03-6700-0007</p>
+		<div class="foot-inner">
+			<div class="infomation">
+				<h1>
+					<a href="index.html"><img src="img/footer_logo.png" alt="tokyobaysidehotel"></a>
+				</h1>
+				<p class="title">東京ベイサイドホテル<p>
+				<p>〒135-0063　東京都江東区有明3-1-15<br>
+				TEL:03-6700-0001(代表)<br>
+				FAX:03-6700-0007</p>
+			</div>
 
-		<ul>
-			<li><a href="#">TOP</a></li>
-			<li><a href="#">ご宿泊</a></li>
-			<li><a href="#">Tレストラン＆バー</a></li>
-			<li><a href="#">スペシャル</a></li>
-			<li><a href="#">アクセス</a></li>
-		</ul>
+		<div class="footer-nav">
+			<ul class="footer-gnav">
+				<li><a href="#">TOP</a></li>
+				<li><a href="#">ご宿泊</a></li>
+				<li><a href="#">レストラン＆バー</a></li>
+				<li><a href="#">スペシャル</a></li>
+				<li><a href="#">アクセス</a></li>
+			</ul>
+			<ul class="footer-subnav">
+				<li><a href="#">会員ページ</a></li>
+				<li><a href="#">よくあるご質問</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="#">会社情報</a></li>
+				<li><a href="#">プライバシーポリシー</a></li>
+				<li><a href="#">利用規約</a></li>
+				<li><a href="#">サイトマップ</a></li>
+			</ul>
+		</div>
 
-		<ul>
-			<li><a href="#">会員ページ</a></li>
-			<li><a href="#">よくあるご質問</a></li>
-			<li><a href="#">お問い合わせ</a></li>
-			<li><a href="#">会社情報</a></li>
-			<li><a href="#">プライバシーポリシー</a></li>
-			<li><a href="#">利用規約</a></li>
-			<li><a href="#">サイトマップ</a></li>
-		</ul>
+		<div class="other-link">
+			<ul class="link-first">
+				<li><a href="#">金沢<br>香林坊</a></li>
+				<li><a href="#">トラスティ<br>名古屋</a></li>
+				<li><a href="#">トラスティ<br>心斎橋</a></li>
+			</ul>
+			<ul class="link-last">
+				<li><a href="#">神戸<br>旧居留地</a></li>
+				<li><a href="#">トラスティ<br>名古屋 栄</a></li>
+				<li><a href="#">大阪<br>阿倍野</a></li>
+			</ul>
+		</div>
 
-		<ul>
-			<li><a href="#">金沢香林坊</a></li>
-			<li><a href="#">神戸旧留地</a></li>
-			<li><a href="#">トラスティ名古屋</a></li>
-			<li><a href="#">トラスティ名古屋　栄</a></li>
-			<li><a href="#">トラスティ心斎橋</a></li>
-			<li><a href="#">大阪阿倍野</a></li>
-		</ul>
 
-	<p><small>Copyright &copy; RESORTTRUST All rights reserved.</small></p>
+		<p class="copyright"><small>Copyright &copy; RESORTTRUST All rights reserved.</small></p>
 
+		</div><!-- foot-inner -->
 	</footer>
+
+
 
 
 </body>

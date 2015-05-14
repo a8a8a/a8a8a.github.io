@@ -1,255 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
 	<title>hotel web 谷端</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/stay.css">
 </head>
 <body>
 
-	<header>
-		<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-		<nav>
-			<ul>
-				<li><a href="#">お問い合わせ</a></li>
-				<li>
-				<a href="#">
-				<select name="language" id="language">
-					<option value="en">English</option>
-					<option value="ch">中文(簡体字)</option>
-					<option value="ch">中文(繁体字)</option>
-					<option value="co">한국어</option>
-					</select>
-				</a></li>
-			</ul><!-- subnav -->
+	<div class="header_wrapper">
+		<header>
+			<div class="inner">
+				<h1>
+				<a href="index.html"><img src="img/logo.png" alt="tokyo bayside hotel"></a>
+				</h1>
 
-			<ul>
-				<li><a href="stay.html"><img src="img/stay.png" alt="stay"></a></li>
-				<li><a href="#"><img src="img/restaurant.png" alt="restaurant"></a></li>
-				<li><a href="#"><img src="img/special.png" alt="special"></a></li>
-				<li><a href="#"><img src="img/access.png" alt="access"></a></li>
-			</ul><!-- nav -->
-		</nav>
-	</header>
+				<div class="navigation">
+					<ul class="subnav">
+						<li><a href="#">お問い合わせ</a></li>
+						<li>
+							<select name="language" id="language">
+								<option value="en">English</option>
+								<option value="ch">中文(簡体字)</option>
+								<option value="ch">中文(繁体字)</option>
+								<option value="co">한국어</option>
+							</select>
+						</li>
+					</ul><!-- subnav -->
+
+					<nav>
+						<ul>
+							<li><a href="stay.html"><img src="img/stay.png" alt="stay"></a></li>
+							<li><a href="#"><img src="img/restaurant.png" alt="restaurant"></a></li>
+							<li><a href="#"><img src="img/special.png" alt="special"></a></li>
+							<li><a href="#"><img src="img/access.png" alt="access"></a></li>
+						</ul><!-- nav -->
+					</nav>
+				</div>
+			</div><!-- inner -->
+			</header>
 
 	<!-- ↓部屋内容 -->
-	<div>
-		<img src="img/roomVisual.jpg" alt="mainVisual">
-		<br>
-		<img src="img/roomVisual01.jpg" alt="sub01">
-		<img src="img/roomVisual02.jpg" alt="sub02">
-		<img src="img/roomVisual03.jpg" alt="sub03">
-	</div><!-- roomVisual -->
+	<div class="roomtype">
+		<div class="mainVisual">
+			<img src="img/roomVisual.jpg" alt="部屋写真">
+		</div><!-- roomVisual -->
 
-	<section>
-		<h2>Suite room</h2>
-		<p>日常を忘れさせる洗練された空間。都心の隠れ家として、寛ぎのひとときをお過ごしください。</p>
-	</section><!-- title -->
-
-
-		<form action="reserve.php"></form>
-		<dl>
-		<dt>ご宿泊</dt>
-			<dd>
-				<select name="ym" id="ym">
-					<option value="201504">2015年4月</option>
-					<option value="201505">2015年5月</option>
-					<option value="201506">2015年6月</option>
-				</select>
-
-				<select name="yd" id="yd">
-					<option value="20">20日</option>
-					<option value="21">21日</option>
-					<option value="22">22日</option>
-					<option value="23">23日</option>
-					<option value="24">24日</option>
-					<option value="25">25日</option>
-				</select>
-			</dd>
-		</dl>
-		<dl>
-			<dt>日数</dt>
-			<dd>
-				<select name="stays" id="stays">
-					<option value="1">1泊</option>
-					<option value="2">2泊</option>
-					<option value="3">3泊</option>
-					<option value="4">4泊</option>
-					<option value="5">5泊</option>
-				</select>
-			</dd>
-
-			<dt>部屋数</dt>
-			<dd>
-				<select name="rooms" id="rooms">
-					<option value="1">1室</option>
-					<option value="2">2室</option>
-					<option value="3">3室</option>
-					<option value="4">4室</option>
-					<option value="5">5室</option>
-				</select>
-			</dd>
-
-			<dt>人数</dt>
-			<dd>
-				<select name="persons" id="persons">
-					<option value="1">1人</option>
-					<option value="2">2人</option>
-					<option value="3">3人</option>
-					<option value="4">4人</option>
-					<option value="5">5人</option>
-				</select>
-			</dd>
-		</dl>
-
-		<dl>
-			<dt>検索タイプ</dt>
-			<dd><input type="radio" name="room" value="type" checked="checked">部屋タイプ別</dd>
-			<dd><input type="radio" name="room" value="plan">宿泊プラン別</dd>
-		</dl>
-
-			<a href="#"><img src="img/reservebtn.png" alt="btn"></a>
-	<!-- stay -->
-
-	<ul>
-		<li><a href="#">プラン一覧</a></li>
-		<li><a href="#">客室紹介</a></li>
-		<li><a href="#">シングルルーム</a></li>
-		<li><a href="#">ダブルルーム</a></li>
-		<li><a href="stay.html">スイートルーム</a></li>
-		<li><a href="#">プラン紹介</a></li>
-		<li><a href="#">お問い合わせ</a></li>
-	</ul>
-	<!-- link -->
-
-	<table border="1">
-		<tr>
-			<th>チェックイン</th>
-			<td>15:00</td>
-		</tr>
-		<tr>
-			<th>チェックアウト</th>
-			<td>11:00</td>
-		</tr>
-		<tr>
-			<th>客室基本料</th>
-			<td>￥〜57,800(税込)<br><br>
-					早着料金<br>
-					13:00〜 室料30％<br>
-					11:00〜 室料50％<br>
-					〜11:00 室料100％<br><br>
-					延滞料金<br>
-					〜13:00 室料30％<br>
-					〜15:00 室料50％<br>
-					15:00〜 室料100％<br>
-			</td>
-		</tr>
-	</table>
-	<p>※表示料金は基本料金となります。<br>
-	ホテルが指定する特定日には料金を変更させていただく場合がございますので、ご予約の際にご確認ください。</p>
-	<!-- 客室基本事項-->
-<br>
-
-	<div>
-		見取り図<br>
-		<img src="img/sketch.jpg" alt="sketch"><br>
-		<a href="#">[PDF 16KB]</a>
-	</div>
-	<br>
-
-
-	<table border="1">
-		<tr>
-			<th>広さ</th>
-			<td>54㎡</td>
-		</tr>
-		<tr>
-			<th>ベッド</th>
-			<td>1200×2cm</td>
-		</tr>
-		<tr>
-			<th>サービス</th>
-			<td>ランドリー<br>
-					・午前10時までの集荷→当日夕刻のお渡し<br>
-					・午前10時意向の集荷→翌日昼のお渡し<br>
-<br>
-					マッサージ<br>
-					・午後7時〜午前2時まで受付<br>
-<br>
-					インターネット<br>
-					・高速インターネット回線を全客室に完備。<br>
-<br>
-					ビデオ・オン・デマンド<br>
-					お好きな時間に各種ビデオをはじめ、最新ムービーまでお楽しみいただける映像システムです。<br>
-					・プリペイドカード：1000円
-			</td>
-		</tr>
-		<tr>
-			<th>標準客室設備</th>
-			<td>シャワートイレ／ユニットバス内電話／冷蔵庫／イオンドライヤー／ズボンプレッサー／高速インターネット通信回線（無料）／ビデオ・オン・デマンド（有料）／液晶テレビ／各フロアにベンダーコーナーが設置されています。</td>
-		</tr>
-	<tr>
-		<th>アメニティ</th>
-		<td>バスタオル／フェイスタオル／ハンドタオル／シャンプー／コンディショナー／ボディソープ／フェイスソープ／綿棒／シェーバー／歯ブラシ／ヘアブラシ／スリッパ／浴衣／バスローブ／入浴剤</td>
-	</tr>
-	</table>
-	<!-- 客室設備 -->
-
-	<div>
-		<a href="#"><img src="img/btn.png" alt="宿泊予約"></a>
-	</div>
-	<!-- 予約ボタン --><br>
-
-	<section>
-		<hr>
-		<h2>おすすめのプラン</h2>
-		<ul>
-			<li><a href="#"><img src="img/plan01.jpg" alt="special"></a></li>
-			<li><a href="#"><img src="img/plan02.jpg" alt="fair"></a></li>
+		<ul class="subVisual">
+			<li><img src="img/roomVisual01.jpg" alt="ベッド"></li>
+			<li><img src="img/roomVisual02.jpg" alt="リビングルーム"></li>
+			<li><img src="img/roomVisual03.jpg" alt="バスルーム"></li>
 		</ul>
-		<a href="#">その他のプランを見る</a>
-	</section><!-- special -->
 
-	<br><br>
+		<section  class="roomtype_title">
+			<h3>Suite room</h3>
+			<p>日常を忘れさせる洗練された空間。都心の隠れ家として、寛ぎのひとときをお過ごしください。</p>
+		</section><!-- title -->
+	</div><!-- roomtype -->
+</div><!-- header_wrapper -->
+
+
+
+
+<div class="wrapper">
+	<div class=" left_column">
+			<div class="form">
+				<form action="reserve.php">
+					<ul>
+						<li class="month">
+						<dl>
+							<dt>ご宿泊日</dt>
+							<dd>
+								<select name="ym" id="ym">
+									<option value="201504">2015年4月</option>
+									<option value="201505">2015年5月</option>
+									<option value="201506">2015年6月</option>
+								</select>
+							</dd>
+						</dl>
+						</li>
+						<li class="days">
+						<dl>
+							<dt>　<!-- 日にち --></dt>
+							<dd>
+								<select name="yd" id="yd">
+									<option value="20">20日</option>
+									<option value="21">21日</option>
+									<option value="22">22日</option>
+									<option value="23">23日</option>
+									<option value="24">24日</option>
+									<option value="25">25日</option>
+								</select>
+							</dd>
+						</dl>
+						</li>
+						<li class="stays">
+							<dl>
+								<dt>日数</dt>
+								<dd>
+									<select name="stays" id="stays">
+										<option value="1">1泊</option>
+										<option value="2">2泊</option>
+										<option value="3">3泊</option>
+										<option value="4">4泊</option>
+										<option value="5">5泊</option>
+									</select>
+								</dd>
+							</dl>
+						</li>
+						<li class="rooms">
+							<dl>
+								<dt>部屋数</dt>
+								<dd>
+									<select name="rooms" id="rooms">
+										<option value="1">1室</option>
+										<option value="2">2室</option>
+										<option value="3">3室</option>
+										<option value="4">4室</option>
+										<option value="5">5室</option>
+									</select>
+								</dd>
+							</dl>
+						</li>
+						<li class="persons">
+							<dl>
+								<dt>人数</dt>
+								<dd>
+									<select name="persons" id="persons">
+										<option value="1">1人</option>
+										<option value="2">2人</option>
+										<option value="3">3人</option>
+										<option value="4">4人</option>
+										<option value="5">5人</option>
+									</select>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+
+				<dl>
+					<dt>検索タイプ</dt>
+						<dd><input type="radio" name="room" value="type" checked="checked">部屋タイプ別</dd>
+						<dd><input type="radio" name="room" value="plan">宿泊プラン別</dd>
+					</dl>
+
+							<a href="#"><img src="img/reservebtn.png" alt="btn"></a>
+						</form>
+					</div><!-- form -->
+
+				<div class="side_link">
+						<ul>
+							<li class="type_link"><a href="#">プラン一覧</a></li>
+							<li class="type_link"><a href="#">客室紹介</a></li>
+							<li class="room_link"><a href="#">シングルルーム</a></li>
+							<li class="room_link"><a href="#">ダブルルーム</a></li>
+							<li class="room_link"><a href="#">ツインルーム</a></li>
+							<li class="room_link"><a href="stay.html">スイートルーム</a></li>
+							<li class="type_link"><a href="#">プラン紹介</a></li>
+							<li class="type_link"><a href="#">お問い合わせ</a></li>
+					</ul>
+				</div><!-- link -->
+			</div><!-- stay -->
+
+
+
+
+	<div class="contents">
+		<div class="roominfo01">
+		<div class="table">
+			<table>
+				<tr>
+					<th>チェックイン</th>
+					<td>15:00</td>
+				</tr>
+				<tr>
+					<th>チェックアウト</th>
+					<td>11:00</td>
+				</tr>
+				<tr>
+					<th>客室基本料</th>
+					<td>￥〜57,800(税込)
+							早着料金
+							13:00〜 室料30％<br>
+							11:00〜 室料50％<br>
+							〜11:00 室料100％<br>
+							延滞料金<br>
+							〜13:00 室料30％<br>
+							〜15:00 室料50％<br>
+							15:00〜 室料100％<br>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p>※表示料金は基本料金となります。<br>
+		ホテルが指定する特定日には料金を変更させていただく場合がございますので、ご予約の際にご確認ください。</p>
+	</div>
+		<!-- 客室基本事項-->
+
+		<div class="sketch">
+			<p>見取り図</p>
+			<img src="img/sketch.jpg" alt="見取り図">
+			<a href="#">[PDF 16KB]</a>
+		</div>
+
+
+<div class="roominfo02">
+	<div class="table">
+		<table>
+			<tr>
+				<th>広さ</th>
+				<td>54㎡</td>
+			</tr>
+			<tr>
+				<th>ベッド</th>
+				<td>1200×2cm</td>
+			</tr>
+			<tr>
+				<th>サービス</th>
+				<td>ランドリー<br>
+						・午前10時までの集荷→当日夕刻のお渡し<br>
+						・午前10時意向の集荷→翌日昼のお渡し<br>
+		<br>
+						マッサージ<br>
+						・午後7時〜午前2時まで受付<br>
+		<br>
+						インターネット<br>
+						・高速インターネット回線を全客室に完備。<br>
+		<br>
+						ビデオ・オン・デマンド<br>
+						お好きな時間に各種ビデオをはじめ、最新ムービーまでお楽しみいただける映像システムです。<br>
+						・プリペイドカード：1000円
+				</td>
+			</tr>
+			<tr>
+				<th>標準客室設備</th>
+				<td>シャワートイレ／ユニットバス内電話／冷蔵庫／イオンドライヤー／ズボンプレッサー／高速インターネット通信回線（無料）／ビデオ・オン・デマンド（有料）／液晶テレビ／各フロアにベンダーコーナーが設置されています。</td>
+			</tr>
+		<tr>
+			<th>アメニティ</th>
+			<td>バスタオル／フェイスタオル／ハンドタオル／シャンプー／コンディショナー／ボディソープ／フェイスソープ／綿棒／シェーバー／歯ブラシ／ヘアブラシ／スリッパ／浴衣／バスローブ／入浴剤</td>
+		</tr>
+		</table>
+	</div>
+</div>
+		<!-- 客室設備 -->
+
+		<div class="reserve_btn">
+			<a href="#"><img src="img/btn.png" alt="宿泊予約"></a>
+		</div>
+		<!-- 予約ボタン --><br>
+
+
+				<section class="plan">
+					<h2>スペシャルプラン</h2>
+					<ul>
+						<li><a href="#"><img src="img/plan01.jpg" alt="special"></a></li>
+						<li><a href="#"><img src="img/plan02.jpg" alt="fair"></a></li>
+					</ul>
+					<p class="contents_link"><a href="#">その他のプラン</a></p>
+				</section><!-- special -->
+		</div><!-- contents -->
+</div><!-- wrapper -->
+
 
 
 	<footer>
-	<hr>
-		<a href="index.html"><img src="img/footer_logo.png" alt="logo"></a>
-		<p>東京ベイサイドホテル<br>
-		〒135-0063　東京都江東区有明3-1-15<br>
-		TEL:03-6700-0001(代表)<br>
-		FAX:03-6700-0007</p>
+		<div class="foot-inner">
+			<div class="infomation">
+				<h1>
+					<a href="index.html"><img src="img/footer_logo.png" alt="tokyobaysidehotel"></a>
+				</h1>
+				<p class="title">東京ベイサイドホテル<p>
+				<p>〒135-0063　東京都江東区有明3-1-15<br>
+				TEL:03-6700-0001(代表)<br>
+				FAX:03-6700-0007</p>
+			</div>
 
-		<ul>
-			<li><a href="#">TOP</a></li>
-			<li><a href="#">ご宿泊</a></li>
-			<li><a href="#">Tレストラン＆バー</a></li>
-			<li><a href="#">スペシャル</a></li>
-			<li><a href="#">アクセス</a></li>
-		</ul>
+		<div class="footer-nav">
+			<ul class="footer-gnav">
+				<li><a href="#">TOP</a></li>
+				<li><a href="#">ご宿泊</a></li>
+				<li><a href="#">レストラン＆バー</a></li>
+				<li><a href="#">スペシャル</a></li>
+				<li><a href="#">アクセス</a></li>
+			</ul>
+			<ul class="footer-subnav">
+				<li><a href="#">会員ページ</a></li>
+				<li><a href="#">よくあるご質問</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="#">会社情報</a></li>
+				<li><a href="#">プライバシーポリシー</a></li>
+				<li><a href="#">利用規約</a></li>
+				<li><a href="#">サイトマップ</a></li>
+			</ul>
+		</div>
 
-		<ul>
-			<li><a href="#">会員ページ</a></li>
-			<li><a href="#">よくあるご質問</a></li>
-			<li><a href="#">お問い合わせ</a></li>
-			<li><a href="#">会社情報</a></li>
-			<li><a href="#">プライバシーポリシー</a></li>
-			<li><a href="#">利用規約</a></li>
-			<li><a href="#">サイトマップ</a></li>
-		</ul>
+		<div class="other-link">
+			<ul class="link-first">
+				<li><a href="#">金沢<br>香林坊</a></li>
+				<li><a href="#">トラスティ<br>名古屋</a></li>
+				<li><a href="#">トラスティ<br>心斎橋</a></li>
+			</ul>
+			<ul class="link-last">
+				<li><a href="#">神戸<br>旧居留地</a></li>
+				<li><a href="#">トラスティ<br>名古屋 栄</a></li>
+				<li><a href="#">大阪<br>阿倍野</a></li>
+			</ul>
+		</div>
 
-		<ul>
-			<li><a href="#">金沢香林坊</a></li>
-			<li><a href="#">神戸旧留地</a></li>
-			<li><a href="#">トラスティ名古屋</a></li>
-			<li><a href="#">トラスティ名古屋　栄</a></li>
-			<li><a href="#">トラスティ心斎橋</a></li>
-			<li><a href="#">大阪阿倍野</a></li>
-		</ul>
 
-	<p><small>Copyright &copy; RESORTTRUST All rights reserved.</small></p>
+		<p class="copyright"><small>Copyright &copy; RESORTTRUST All rights reserved.</small></p>
 
+		</div><!-- foot-inner -->
 	</footer>
+
+
 
 
 </body>

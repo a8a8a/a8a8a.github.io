@@ -1,0 +1,415 @@
+h2{
+	font-size: 20px;
+	font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6";
+	letter-spacing: 5px;
+	border-top: 1px solid #b6b4b5;
+	padding-top: 13px;
+	margin-bottom: 22px;
+}
+
+.roomtype_title{
+	background: url(../img/roomtype_line.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 0 25px;
+}
+
+ h3{
+	font-size: 36px;
+	font-family: Times;
+	letter-spacing: 5px;
+}
+
+.roomtype_title p{
+	color: #b74444;
+	font-size: 15px;
+	font-family: "ヒラギノ明朝 Pro W3","HiraMinPro-W3";
+}
+
+
+/* ！！！！！　ヘッダー　！！！！！ */
+.header_wrapper{
+	height: 520px;
+	margin-bottom: 22px;
+}
+
+.inner{
+	width: 870px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+header{
+	width: 100%;
+	height: 180px;
+	background-color: #822323;
+}
+
+header h1/* logo */{
+	margin-top: 30px;
+	float: left;
+	width: 124px;
+}
+
+header .subnav/* 機能ナビ */{
+	margin-top: 20px;
+	width: 180px;
+	overflow:hidden;
+	float: right;
+}
+
+.subnav select{
+	height: 20px;
+	background-color: #c7b272;
+	border: none;
+}
+
+.navigation/* gnav&subnav */{
+	float: right;
+	width: 720px;
+}
+
+.subnav li:first-child/* お問い合わせ */{
+	font-size:12px;
+	float:left;
+	line-height: 1.6;
+	font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro";
+
+}
+
+.subnav li:last-child/* language */{
+	float:right;
+}
+
+.subnav li a:link,
+.subnav li a:visited{
+	color: #c7b272;
+	text-decoration: none;
+	display:block;
+}
+
+nav{
+	clear:right;
+}
+
+
+nav ul{
+	overflow:hidden;
+
+}
+
+nav ul li{
+	float:left;
+	margin-top: 18px;
+}
+
+nav ul li a{
+	height: 180px;
+	text-decoration:none;
+}
+
+.roomtype{
+	width: 950px;
+	margin: -58px auto 22px;
+	position: relative;
+	overflow: hidden;
+}
+
+.mainVisual{
+	float: left;
+	width: 700px;
+}
+
+.subVisual{
+	float: right;
+	width: 234px;
+}
+
+.subVisual li{
+	padding-bottom: 10px;
+}
+
+.roomtype_title{
+	clear: both;
+	margin-bottom: 60px;
+}
+
+
+/* ！！！！！　コンテンツ　！！！！！ */
+.wrapper{
+	width: 870px;
+	overflow: hidden;
+	margin: 120px auto;
+}
+
+.left_column{
+	width: 230px;
+	float: left;
+}
+
+.form
+/* 予約フォーム */{
+	border: 1px solid #b2b2b2;
+	border-radius:4px;
+	padding: 24px 30px;
+
+	font-size: 12px;
+	font-family: "ヒラギノ角ゴ ProN W3","HiraKakuProN-W3";
+}
+
+.form select{
+	height: 20px;
+	background-color: #fff;
+}
+
+.form input{
+	background-color: #fff;
+}
+
+.form dl{
+	margin: 0 auto 10px;
+}
+
+.form ul{
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.form dt{
+	margin: 0 0 6px;
+}
+
+.form a img{
+	display: block;
+	margin:0 auto;
+}
+
+.month{
+	width: 90px;
+	display:inline;
+	float: left;
+	margin-right: 10px;
+}
+
+.days{
+	width: 50px;
+	display: inline;
+}
+
+.stays{
+	width: 50px;
+	display:inline;
+	float: left;
+	margin-right: 10px;
+}
+
+.rooms{
+	width: 50px;
+	display:inline;
+}
+
+.persons{
+	width: 50px;
+	clear: left;
+}
+
+
+.side_link
+/* 部屋・タイプ別リンク */{
+	width: 170px;
+	margin: 22px 0;
+	border: 1px solid #b2b2b2;
+	border-radius:4px;
+	padding: 0 30px 24px 30px;
+
+	font-size: 12px;
+	font-family: "ヒラギノ角ゴ ProN W3","HiraKakuProN-W3";
+}
+
+.side_link a:link{
+	color: #000;
+	text-decoration: none;
+}
+
+.side_link a:visited,
+.side_link a:hover{
+	color: #8f8f8f;
+}
+
+
+.type_link{
+	background: url(../img/roomtype_icn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+	margin-top: 28px;
+}
+
+.room_link{
+	background: url(../img/roomtype_arrow.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 14px;
+	margin: 18px auto 18px 10px;
+}
+
+
+
+.contents
+/* 部屋情報＆プラン */{
+	width: 600px;
+	float:right;
+	font-size: 13px;
+	font-family: "ヒラギノ角ゴ Pro W3","HiraKakuPro-W3";
+}
+
+.table th{
+	width: 100px;
+	background-color: #f0e8e2;
+	text-align: left;
+	padding: 20px	20px 0 20px;
+}
+
+
+.roominfo01{
+	width: 310px;
+	float: left;
+}
+
+.sketch{
+	margin-left: 10px;
+}
+
+.roominfo02{
+	width: 570px;
+}
+
+.contents_link{
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 45px;
+	display:block;
+	padding-top: 12px;
+}
+
+.contents_link a:link,
+.contents_link a:visited{
+	color: #c7b272;
+	text-decoration: underline;
+}
+
+.plan ul{
+	height: 280px;
+}
+
+.plan ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+.plan ul li:last-child{
+	margin-right: 0;
+}
+
+.reserve_btn{
+	text-align: center;
+	margin: 52px auto;
+}
+
+
+
+/* ！！！！！　フッター　！！！！！ */
+footer{
+	width: 100%;
+	background-color: #eee;
+	color: #313131;
+}
+
+footer a{
+	color: #313131;
+	text-decoration: none;
+	display:block;
+}
+
+.foot-inner{
+	width: 870px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 24px 0 0;
+}
+
+.infomation{
+	width:240px;
+	float:left;
+	font-size: 12px;
+	}
+
+
+.title{
+	font-size: 14px;
+	margin-top: 16px;
+}
+
+.footer-nav{
+	width: 300px;
+	float: left;
+	margin-left: 80px;
+	font-size: 13px;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+.footer-nav a{
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 10px;
+	margin-bottom: 12px;
+}
+
+.footer-gnav{
+	width: 120px;
+	float:left;
+}
+
+.footer-subnav{
+	width: 150px;
+	float:right;
+}
+
+.other-link{
+	width: 204px;
+	float: right;
+
+	font-size: 13px;
+	font-family: "ヒラギノ明朝 Pro W6","HiraMinPro-W6";
+	color: #313131;
+}
+
+.link-first{
+	width: 87px;
+	float:left;
+}
+
+.link-last{
+	width: 87px;
+	float:right;
+	margin-left: 5px;
+}
+
+.other-link a{
+	background-image: url(../img/link_icn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+	margin-bottom: 8px;
+}
+
+.copyright{
+	color: #bdbdbd;
+	font-size:12px;
+	text-align: center;
+	clear:both;
+	border-top: 1px solid #d6d6d6;
+	padding: 8px 0;
+}
