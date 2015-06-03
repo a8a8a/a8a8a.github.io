@@ -1,0 +1,550 @@
+h1{
+position: absolute;
+width: 129px;
+height: 96px;
+left:50%;
+top:0;
+margin-left: -65px;
+}
+
+h2{
+	width: 980px;
+	font-size: 24px;
+	font-family: "myriad pro";
+	letter-spacing: 5px;
+	padding-top: 32px;
+	margin-bottom: 24px;
+}
+
+header{
+	overflow:hidden;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header_wrapper{
+	width: 1170px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.inner{
+	width: 980px;
+	margin-top: 48px;
+}
+
+.subnav{
+	width: 260px;
+	float: right;
+	overflow: hidden;
+}
+
+.subnav li a:link,
+.subnav li a:visited{
+	color: #aaa;
+	text-decoration: none;
+	display:block;
+}
+
+.subnav li a:hover{
+	color: #000;
+	text-decoration: none;
+	display:block;
+}
+
+.subnav ul{
+	width: 51px;
+	float: left;
+	margin-top: 6px;
+}
+
+.subnav ul li{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Myriad Pro";
+	float: left;
+}
+
+.subnav ul li:first-child{
+	margin-right: 7px;
+	padding-right: 7px;
+	border-right: 2px solid #aaa;
+}
+
+.searchform{
+	overflow: hidden;
+	width: 190px;
+	float: right;
+}
+
+.keywords{
+	width: 162px;
+	height: 24px;
+	border-radius: 4px;
+	background: #eee;
+	border: none;
+	color: #000;
+	float:left;
+	padding: 0;
+}
+#search01 {
+	top: 0;
+	left: 162px;
+	float:right;
+}
+
+
+nav{
+	width: 100%;
+	clear:right;
+
+}
+
+nav ul{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:hidden;
+}
+
+nav ul li{
+	float:left;
+	margin-top: 18px;
+}
+
+nav ul li a{
+	height: 180px;
+	text-decoration:none;
+}
+
+
+.want{
+	clear:right;
+	background-image: url(../img/town.png);
+	width: 1170px;
+	height: 534px;
+}
+
+.want ul{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:hidden;
+}
+
+.want ul li{
+	float:left;
+	margin-right: 23px;
+}
+
+.want ul li:last-child{
+	margin-right: 0px;
+}
+
+.want ul li a{
+	height: 300px;
+	text-decoration:none;
+}
+
+a:link.want_title{
+  display:block;
+  width:1170px;
+  height:234px;
+  background-image:url(../img/want_title.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want_title{
+  display:block;
+  width:1170px;
+  height:234px;
+  background-image:url(../img/want_title_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.want1{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_awa.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want1{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_awa_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.want2{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_detox.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want2{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_detox_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.want3{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_littlenoah.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want3{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_littlenoah_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.want4{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_pet.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want4{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_pet_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.want5{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_spot.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want5{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_spot_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.want6{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_school.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want6{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_school_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.want7{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_gf.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.want7{
+  display:block;
+  width:120px;
+  height:300px;
+  background-image:url(../img/want_gf_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+
+.contents_wrapper{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.more_btn{
+	width: 240px;
+	text-align: center;
+	margin: 32px auto;
+}
+
+.pickup{
+	text-align: center;
+}
+
+.pickup h2{
+	 text-align: left;
+}
+
+.pickup a img{
+	margin: 0 auto;
+}
+
+.link{
+	clear:right;
+}
+
+.link ul{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:hidden;
+}
+
+.link ul li{
+	float:left;
+	margin-bottom: 24px;
+	margin-right: 16px;
+}
+
+.link ul li:last-child{
+	margin-right: 0px;
+}
+
+.link ul li a{
+	height: 180px;
+	text-decoration:none;
+}
+
+
+a:link.link1{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/spotlight.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.link1{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/spotlight_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.link2{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/school.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.link2{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/school_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.link3{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/755.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.link3{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/755_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.link4{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/bf.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.link4{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/BF_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.link5{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/awa.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.link5{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/awa_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+a:link.link6{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/pricone.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+a:hover.link6{
+  display:block;
+  width:150px;
+  height:150px;
+  background-image:url(../img/pricime_on.png);
+  text-indent:-10000px;
+  list-style:none;
+}
+
+
+.news{
+	width: 980px;
+	font-size:14px;
+	line-height:22px;
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro";
+	overflow: hidden;
+}
+
+.news li a:link,
+.news li a:visited{
+	color: #535353;
+	text-decoration: none;
+	display:block;
+}
+
+.news li a:hover{
+	color: #4dab25;
+	text-decoration: none;
+	display:block;
+}
+
+.news ul{
+	overflow: hidden;
+}
+
+.news ul li{
+	margin-bottom: 32px;
+}
+
+.news_left{
+	width: 475px;
+	float: left;
+}
+
+.news_right{
+	width: 475px;
+	float: right;
+}
+
+.newsimg{
+	width: 80px;
+	float: left;
+	margin-right: 15px;
+}
+
+.newstext{
+	width: 380px;
+	float: right;
+	text-align: left;
+}
+
+.date{
+	text-align: right;
+}
+
+.news .more_btn{
+  text-align: center;
+/*   margin: 24px auto; */
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #4c4c4c;
+	color: #fff;
+	font-size: 13px;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro";
+	clear:left;
+}
+
+footer a{
+	color: #fff;
+	text-decoration: none;
+	display:block;
+}
+
+.footerinner{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.footer_nav{
+	width: 732px;
+	float:left;
+}
+
+.footer-logo {
+	float: right;
+	width: 183px;
+	margin-top: 32px;
+}
+
+
+footer ul li{
+	float:left;
+	margin: 18px 28px 18px 0px;
+	}
+
+footer ul li a{
+	text-decoration:none;
+}
+
+.copyright{
+	color: #fff;
+	font-size:11px;
+	text-align: left;
+	clear:both;
+	border-top: 1px solid #d6d6d6;
+	padding-top: 18px;
+}
